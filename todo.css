@@ -1,0 +1,143 @@
+body{
+    background-color:  #fff;
+    flex-direction: column;
+}
+.main{
+    height: max-content;
+    width: 51%;
+    border: 1px solid gray;
+    
+    margin:  50px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 15px;
+    background-color: #7dd3ef;
+    
+}
+
+.to-do {
+    font-weight: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: medium;
+    
+   }
+#icon{
+    width: 40px;
+    margin-right:  auto;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    flex-direction: column;
+}
+#icon:hover {
+    box-shadow: 0 8px 16px rgba(240, 43, 102, 0.2);
+    transform: scale(1.050);
+    cursor: pointer;
+    /* background:linear-gradient(orange,rgb(238, 197, 93),green); */
+    border-radius: 5px;
+}
+
+ /* =========================input-box-css=========================================================== */
+#to-do-box{   
+    color: rgb(232, 227, 224);
+    margin-top:30px; 
+    width: 350px ;
+    margin-left: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: transparent;
+    box-shadow: 10px 10px 5px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    justify-content: center;
+    color: #c82333;
+    font-size: large;
+    
+    
+    
+}
+button{
+    width: 100px;
+    margin-left: 35px;
+    border-radius: 10px;
+}
+.btn {
+    padding: 10px 20px;
+    background-color: #51e4b3;
+    color: white;
+    border: 2px 2px solid black;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.btn:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    background:linear-gradient(orange,rgb(238, 197, 93),green);
+    box-shadow:  10px 10px 5px 2px #888888;
+    border: none;
+}
+
+
+/* ==================================================append content============================================= */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    /* background: #2ae7dd; */
+    background-color: transparent;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button {
+    background: #dc3545;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+li button:hover {
+    background: #c82333;
+}
+
+/* ====================for making responsive================================== */
+@media (max-width: 768px) {
+    #to-do-box {
+        margin-left: 10px;
+        width: 80%;
+    }
+
+    .main{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .to-do h1{
+        align-items: center;
+        text-align: center;
+    }
+
+    .btn{
+        margin: 25px 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    #to-do-box {
+        margin-left: 5px;
+        width: 95%;
+    }
+
+    input[type="text"] {
+        width: 60%;
+    }
+
+    button {
+        padding: 10px;
+    }
+}
